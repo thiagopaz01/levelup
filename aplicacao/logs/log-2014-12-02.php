@@ -1,0 +1,16 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-12-02 17:22:31 --> 404 Page Not Found --> p4_admin
+ERROR - 2014-12-02 17:23:18 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:18 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:27 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:30 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:39 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:40 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:40 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:47 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:50 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:52 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:23:55 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:24:00 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-12-02 17:24:03 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\levelup\sistema\database\drivers\mysql\mysql_driver.php 73

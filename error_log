@@ -1,0 +1,1 @@
+[24-Sep-2013 09:00:11] PHP Fatal error:  Call to undefined method Valor::conteudo() in /home/fbr/public_html/teste-site/aplicacao/controllers/busca.php on line 34

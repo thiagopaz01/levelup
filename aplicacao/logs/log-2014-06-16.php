@@ -1,0 +1,29 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-06-16 20:54:24 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 20:54:24 --> Unable to select database: bezerra_souza
+ERROR - 2014-06-16 21:11:32 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:11:32 --> Unable to select database: bezerra_souza
+ERROR - 2014-06-16 21:11:36 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:11:36 --> Unable to select database: bezerra_souza
+ERROR - 2014-06-16 21:26:16 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:26:18 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:26:19 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:26:20 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:26:20 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:26:20 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:26:26 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:26:26 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:29:11 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:30:26 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:30:49 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:32:07 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:32:09 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:32:09 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:32:42 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:34:35 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:34:39 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 21:34:40 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 23:16:48 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 23:17:03 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2014-06-16 23:17:36 --> Severity: 8192  --> mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\bsa\sistema\database\drivers\mysql\mysql_driver.php 73
