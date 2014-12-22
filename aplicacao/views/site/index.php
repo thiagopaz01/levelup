@@ -156,25 +156,25 @@ $(document).ready(function(){
 				<div class="one-fourth text-align-center">
 					<h1><i class="icon-pencil"></i></h1>
 					<h3>MATERIAL</h3>
-					<p>Material internacional, da Universidade de Cambridge, o Interchange, usado em várias escolas do Brasil e do Mundo.</p>
+					<p><?php echo $material->texto;?></p>
 				</div><!--END ONE-FOURTH-->		
 										
 				<div class="one-fourth text-align-center">
 					<h1><i class="icon-thumbs-up-alt"></i></h1>
 					<h3>PREÇOS</h3>
-					<p>Valor da mensalidade sem desconto é R$ 120,00 (pagamentos até o dia 05 de cada mês, fica R$ 110,00)</p>
+					<p><?php echo $precos->texto;?></p>
 				</div><!--END ONE-FOURTH-->		
 											
 				<div class="one-fourth text-align-center">
 					<h1><i class="icon-lightbulb"></i></h1>
 					<h3>OUTROS</h3>
-					<p>Cursos de curta duração serão sempre realizados no mês de férias( janeiro e Julho).</p>
+					<p><?php echo $outros->texto;?></p>
 				</div><!--END ONE-FOURTH-->			
 										
 				<div class="one-fourth text-align-center last">
 					<h1><i class="icon-comments"></i></h1>
 					<h3>GRUPOS</h3>
-					<p>Descontos especiais para grupos. Chame seus amigos e forme um grupo. Mínimo de cinco alunos e máximo de 15</p>
+					<p><?php echo $grupos->texto;?></p>
 				</div><!--END ONE-FOURTH LAST-->
 				
 				
@@ -193,64 +193,36 @@ $(document).ready(function(){
 			<div class="portfolio-grid">
 		
 				<ul id="thumbs" class="col3">
-						
+				<?php if(is_array($lstDiferencial) && count($lstDiferencial) > 0):?>
+					<?php foreach($lstDiferencial as $objDiferencial):?>
 					<li class="item web">
-						<img src="images/portfolio-item-1.jpg" alt="" />
+						<img src="<?php echo base_url("conteudo/$objDiferencial->imagem");?>" alt="" width="368" />
 						<div class="col4 item-info">
-							<h3 class="title"><a href="portfolio-single.html">salas</a></h3>
+							<h3 class="title"><a href="<?php echo $objDiferencial->link;?>"><?php echo $objDiferencial->titulo;?></a></h3>
 						</div><!--END ITEM-INFO--> 	
 						<div class="item-info-overlay">
 						<div>
 								
-							<p>Nossas salas são climatizadas, e contam com tecnologia multimídia para melhorar o aprendizado.</p>
+							<p><?php echo $objDiferencial->texto;?></p>
 							 
-							<a href="images/portfolio-item-1.jpg" class="button small rounded orange" data-rel="prettyPhoto[web]">preview</a>
+							<a href="<?php echo base_url("conteudo/$objDiferencial->imagem");?>" class="button small rounded orange" data-rel="prettyPhoto[web]">preview</a>
 						</div>					
 						</div><!--END ITEM-INFO-OVERLAY--> 
-					</li>								
-										
-					<li class="item web">
-						<img src="images/portfolio-item-2.jpg" alt="" />
-						<div class="col4 item-info">
-							<h3 class="title"><a href="portfolio-single.html">estrutura</a></h3>
-						</div><!--END ITEM-INFO--> 	
-						<div class="item-info-overlay">
-						<div>	
-							<p>Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae explicabo.</p>
-							
-							<a href="images/portfolio-item-2.jpg" class="button small rounded orange" data-rel="prettyPhoto[web]">preview</a>
-						</div>						
-						</div><!--END ITEM-INFO-OVERLAY--> 
-					</li>
-														
-					<li class="item web">
-						<img src="images/portfolio-item-3.jpg" alt="" />
-						<div class="col4 item-info">
-							<h3 class="title"><a href="portfolio-single.html">metodologia</a></h3>
-						</div><!--END ITEM-INFO--> 	
-						<div class="item-info-overlay">
-						<div>
-								
-							<p>Quadro comum europeu</p>
-							<a href="images/portfolio-item-3.jpg" class="button small rounded orange" data-rel="prettyPhoto[web]">preview</a>
-						</div>						
-						</div><!--END ITEM-INFO-OVERLAY--> 
-					</li>
+					</li>	
+					<?php endforeach;?>
+				<?php endif;?>							
 					
 				</ul><!--END UL THUMBS--> <br>  
 					
 			</div><!--END PORTFOLIO-GRID-->
 		
 		</div><!--END SECTION-->	
-		
-		
-		
-							
+					
 		<div class="section parallax-background dark" id="index">
 	
 			<div class="holder text-align-center">
 				<h2 class="uppercase">SOBRE NÓS</h2>
-				<h3>A Level Up é uma escola de idiomas preocupada com a aprendizagem dos alunos na língua estrangeira que eles escolheram para aprender. A duração dos cursos varia de acordo com o nível de proficiência que o aluno quer atingir. Para isso, utilizamos o Quadro Comum Europeu de Referência para Línguas, que classifica cada estágio do idioma aprendido.</h3><br>
+				<h3><?php echo $sobrenos->texto;?></h3><br>
 					
 			</div><!--END HOLDER-->		
 			
@@ -291,7 +263,7 @@ $(document).ready(function(){
 				</ul><!--END SOCIAL-BOOKMARKS-->
 				
 									
-			<p class="copyright">LEVEL UP curso de idiomas, Av. Norte, 4284, Galeria Anne, 1º andar, Fone: 3314.4284, E-mail: contato@levelupidiomas.com.br, CNPJ:</p>	
+			<p class="copyright"><?php echo $endereco->texto;?></p>	
 			</div><!--END ONE-->	
 		
 		</div><!--END HOLDER-->	

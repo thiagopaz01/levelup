@@ -7,56 +7,90 @@ class Home extends BSA_Site_Controller {
     }
 
     public function index() {
-        $this->load->view('site/index');
+        $data = array();
+        $data['material']          = $this->_getMaterial();
+        $data['precos']             = $this->_getPrecos();
+        $data['outros']              = $this->_getOutros();
+        $data['grupos']            = $this->_getGrupos();
+        $data['sobrenos']              = $this->_getSobreNos();
+        $data['endereco']            = $this->_getEndereco();
+        $data['lstDiferencial']            = $this->_getDiferencial();
+        $this->load->view('site/index',$data);
         
     }
 
-    private function _getBanner() {
-        $categoriasBanner = $this->Categoria->retornarObjeto(6);
-        $lstBanner = $categoriasBanner->conteudos(NULL, NULL, NULL, 'ordem ASC', NULL, NULL);
-        $arrayBanner = array();
+    private function _getMaterial() {
+        $categoria = $this->Categoria->retornarObjeto(6);
+        $conteudo = $categoria->conteudo();
 
-        if ((is_array($lstBanner)) && (!empty($lstBanner))) {
-            foreach ($lstBanner as $banner) {
-                $banner = $banner->valores();
-                $banner->imagem = $banner->imagem(1)->caminho;
+        $conteudo = $conteudo->valores();
 
-                if (empty($banner->link)) {
-                    $banner->link = 'javascript:void(0);';
+        return $conteudo;
+    }
+
+    private function _getPrecos() {
+        $categoria = $this->Categoria->retornarObjeto(7);
+        $conteudo = $categoria->conteudo();
+
+        $conteudo = $conteudo->valores();
+
+        return $conteudo;
+    }
+
+    private function _getOutros() {
+        $categoria = $this->Categoria->retornarObjeto(8);
+        $conteudo = $categoria->conteudo();
+
+        $conteudo = $conteudo->valores();
+
+        return $conteudo;
+    }
+
+    private function _getGrupos() {
+        $categoria = $this->Categoria->retornarObjeto(9);
+        $conteudo = $categoria->conteudo();
+
+        $conteudo = $conteudo->valores();
+
+        return $conteudo;
+    }
+
+    private function _getSobreNos() {
+        $categoria = $this->Categoria->retornarObjeto(11);
+        $conteudo = $categoria->conteudo();
+
+        $conteudo = $conteudo->valores();
+
+        return $conteudo;
+    }
+
+    private function _getEndereco() {
+        $categoria = $this->Categoria->retornarObjeto(12);
+        $conteudo = $categoria->conteudo();
+
+        $conteudo = $conteudo->valores();
+
+        return $conteudo;
+    }
+
+    private function _getDiferencial() {
+        $categoria = $this->Categoria->retornarObjeto(10);
+        $lstConteudos = $categoria->conteudos(3, NULL, NULL, 'ordem ASC', NULL, NULL);
+        $arrayConteudo = array();
+
+        if ((is_array($lstConteudos)) && (!empty($lstConteudos))) {
+            foreach ($lstConteudos as $conteudo) {
+                $conteudo = $conteudo->valores();
+                $conteudo->imagem = $conteudo->imagem(1)->caminho;
+                
+                if (empty($conteudo->link)) {
+                    $conteudo->link = 'javascript:void(0);';
                 }
 
-                $arrayBanner[] = $banner;
+                $arrayConteudo[] = $conteudo;
             }
         }
 
-        return $arrayBanner;
+        return $arrayConteudo;
     }
-
-    private function _getQuemSomos() {
-        $categoriasQuemSomos = $this->Categoria->retornarObjeto(18);
-        $quemSomos = $categoriasQuemSomos->conteudo();
-
-        $quemSomos = $quemSomos->valores();
-
-        return $quemSomos;
-    }
-
-    private function _getEquipe() {
-        $categoriasEquipe = $this->Categoria->retornarObjeto(16);
-        $equipe = $categoriasEquipe->conteudo();
-
-        $equipe = $equipe->valores();
-
-        return $equipe;
-    }
-
-    private function _getAreas() {
-        $categoriasAreas = $this->Categoria->retornarObjeto(17);
-        $areas = $categoriasAreas->conteudo();
-
-        $areas = $areas->valores();
-
-        return $areas;
-    }
-
 }

@@ -80,27 +80,29 @@ $(document).ready(function(){
 	<div class="header clear">
 		
 		<div id="logo">	
-			<a href="index-2.html"><img src="images/logo.png" alt="" /></a>		
+			<a href="<?php echo base_url(); ?>"><img src="images/logo.png" alt="" /></a>		
 		</div><!--END LOGO-->
 	
 		<div id="primary-menu">
 			
 			<ul class="menu">
-				<li><a href="index2.html" class="current">Home</a></li>
-				<li><a href="#">SOBRE</a>		
+				<li><a href="<?php echo base_url(); ?>" class="current">Home</a></li>
+				<li><a href="javascript:void(0);">SOBRE</a>		
 					<ul>
-						<li><a href="team2.html">Equipe</a></li>
-						<li><a href="clients.html">Clientes</a></li>
+						<li><a href="<?php echo base_url(); ?>equipe">Equipe</a></li>
+						<li><a href="<?php echo base_url(); ?>clientes">Clientes</a></li>
 					</ul>
 			    </li>
-				<li><a href="gallery-4.html">IMAGENS</a></li>
-				<li><a href="blog2.html">Blog</a></li>
-				<li><a href="contact3.html">CONTATO</a></li>
+				<li><a href="<?php echo base_url(); ?>imagens">IMAGENS</a></li>
+				<li><a href="<?php echo base_url(); ?>blog">Blog</a></li>
+				<li><a href="<?php echo base_url(); ?>contato">CONTATO</a></li>
 			</ul><!--END UL-->
 			
 		</div><!--END PRIMARY MENU-->
+  
 	</div><!--END HEADER-->	
-</div><!--END HEADER-WRAPPER-->		
+
+</div><!--END HEADER-WRAPPER-->	
 
 <!-- END HEADER -->
 
@@ -164,57 +166,6 @@ $(document).ready(function(){
 						</div><!--END TEAM-MEMBER-INFO-->
 					</div><!--END ONE-THIRD-->
 						
-					<div class="one-third team text-align-center">
-						<img src="images/member2.jpg" alt="" />	
-						<div class="team-member-info">
-							<h2 class="title"><b>Jane Doe</b></h2>
-							<h3 class="uppercase"><b>Designer</b></h3>	
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
-							
-						</div><!--END TEAM-MEMBER-INFO-->
-					</div><!--END ONE-THIRD-->
-						
-					<div class="one-third team text-align-center last">
-						<img src="images/member3.jpg" alt="" />	
-						<div class="team-member-info">	
-							<h2 class="title"><b>Jane McDoe</b></h2>
-							<h3 class="uppercase"><b>Co-founder</b></h3>
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
-								
-						</div><!--END TEAM-MEMBER-INFO-->
-					</div><!--END ONE-THIRD LAST-->
-				</li>
-						
-				<li> 				
-					<div class="one-third team text-align-center">
-						<img src="images/member1.jpg" alt="" />	
-						<div class="team-member-info">	
-							<h2 class="title"><b>John Doe</b></h2>
-							<h3 class="uppercase"><b>Developer</b></h3>	
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
-							
-						</div><!--END TEAM-MEMBER-INFO-->
-					</div><!--END ONE-THIRD-->
-						
-					<div class="one-third team text-align-center">
-						<img src="images/member2.jpg" alt="" />	
-						<div class="team-member-info">
-							<h2 class="title"><b>Jane Doe</b></h2>
-							<h3 class="uppercase"><b>Designer</b></h3>	
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
-								
-						</div><!--END TEAM-MEMBER-INFO-->
-					</div><!--END ONE-THIRD-->
-						
-					<div class="one-third team text-align-center last">
-						<img src="images/member3.jpg" alt="" />	
-						<div class="team-member-info">	
-							<h2 class="title"><b>Jane McDoe</b></h2>
-							<h3 class="uppercase"><b>Co-founder</b></h3>
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
-							
-						</div><!--END TEAM-MEMBER-INFO-->
-					</div><!--END ONE-THIRD LAST-->
 				</li>
 					
 			</ul><!--END BXSLIDER TESTIMONIALS--> 			
