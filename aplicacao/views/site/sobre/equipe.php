@@ -122,65 +122,27 @@ $(document).ready(function(){
 			<h3 class="title uppercase">Conheça nossa equipe</h3>
 			
 			<ul class="bxslider" id="team">
-				
-				<li>				
-					<div class="one-third team text-align-center">
-						<img src="images/member1.jpg" alt="" />	
+			<?php if(is_array($lstEquipe) && count($lstEquipe) > 0):?>
+				<?php foreach($lstEquipe as $key => $objEquipe):?>	
+					<?php if($key % 3 == 0) echo "<li>";?>		
+					<div class="one-third team text-align-center <?php if($key % 3 == 2) echo 'last';?>">
+						<img src="<?php echo base_url("conteudo/$objEquipe->imagem");?>" alt="" />	
 						<div class="team-member-info">	
-							<h2 class="title"><b>John Doe</b></h2>
-							<h3 class="uppercase"><b>Developer</b></h3>	
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
+							<h2 class="title"><b><?php echo $objEquipe->nome;?></b></h2>
+							<h3 class="uppercase"><b><?php echo $objEquipe->subtitulo;?></b></h3>	
+							<p><?php echo $objEquipe->descricao;?></p>	
 							
 						</div><!--END TEAM-MEMBER-INFO-->
 					</div><!--END ONE-THIRD-->
-						
-					<div class="one-third team text-align-center">
-						<img src="images/member2.jpg" alt="" />	
-						<div class="team-member-info">
-							<h2 class="title"><b>Jane Doe</b></h2>
-							<h3 class="uppercase"><b>Designer</b></h3>	
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
-							
-						</div><!--END TEAM-MEMBER-INFO-->
-					</div><!--END ONE-THIRD-->
-						
-					<div class="one-third team text-align-center last">
-						<img src="images/member3.jpg" alt="" />	
-						<div class="team-member-info">	
-							<h2 class="title"><b>Jane McDoe</b></h2>
-							<h3 class="uppercase"><b>Co-founder</b></h3>
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
-								
-						</div><!--END TEAM-MEMBER-INFO-->
-					</div><!--END ONE-THIRD LAST-->
-				</li>
-						
-				<li>				
-					<div class="one-third team text-align-center">
-						<img src="images/member1.jpg" alt="" />	
-						<div class="team-member-info">	
-							<h2 class="title"><b>John Doe</b></h2>
-							<h3 class="uppercase"><b>Developer</b></h3>	
-							<p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>	
-							
-						</div><!--END TEAM-MEMBER-INFO-->
-					</div><!--END ONE-THIRD-->
-						
-				</li>
-					
+					<?php if($key % 3 == 2) echo "</li>";?>
+				<?php endforeach;?>
+				<?php if($key % 3 != 2) echo "</li>";?>
+			<?php endif;?>
+
 			</ul><!--END BXSLIDER TESTIMONIALS--> 			
 			
 		</div><!--END SECTION-->  	
-			
-		
-		
-							
-		
-			
-	
-	
-		
-		
+				
 	</div><!--END CONTENT-->
 	
 </div><!--END CONTENT-WRAPPER--> 

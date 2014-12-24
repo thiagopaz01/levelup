@@ -8,7 +8,7 @@ class Equipe extends BSA_Site_Controller {
 
     public function index() {
         $data['lstEquipe'] = $this->_getEquipe();
-        $this->load->view('site/sobre/equipe');
+        $this->load->view('site/sobre/equipe',$data);
     }
     
     private function _getEquipe(){

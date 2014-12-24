@@ -36,28 +36,28 @@
 	<div class="header clear">
 		
 		<div id="logo">	
-			<a href="index-2.html"><img src="images/logo.png" alt="" /></a>		
+			<a href="<?php echo base_url(); ?>"><img src="images/logo.png" alt="" /></a>		
 		</div><!--END LOGO-->
 	
 		<div id="primary-menu">
 			
 			<ul class="menu">
-				<li><a href="index2.html" class="current">Home</a></li>
-				<li><a href="#">SOBRE</a>		
+				<li><a href="<?php echo base_url(); ?>" class="current">Home</a></li>
+				<li><a href="javascript:void(0);">SOBRE</a>		
 					<ul>
-						<li><a href="team2.html">Equipe</a></li>
-						<li><a href="clients.html">Clientes</a></li>
+						<li><a href="<?php echo base_url(); ?>equipe">Equipe</a></li>
+						<li><a href="<?php echo base_url(); ?>clientes">Clientes</a></li>
 					</ul>
 			    </li>
-				<li><a href="gallery-4.html">IMAGENS</a></li>
-				<li><a href="blog2.html">Blog</a></li>
-				<li><a href="contact3.html">CONTATO</a></li>
+				<li><a href="<?php echo base_url(); ?>imagens">IMAGENS</a></li>
+				<li><a href="<?php echo base_url(); ?>blog">Blog</a></li>
+				<li><a href="<?php echo base_url(); ?>contato">CONTATO</a></li>
 			</ul><!--END UL-->
 			
 		</div><!--END PRIMARY MENU-->
-			
+  
 	</div><!--END HEADER-->	
-	
+
 </div><!--END HEADER-WRAPPER-->		
 
 <!-- END HEADER -->
@@ -80,18 +80,11 @@
 		<div class="section">
 			
 			<div class="grid row3 clients">
-				<div><a href="#"><img src="images/clients/logo1.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo2.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo3.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo4.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo5.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo6.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo7.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo8.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo9.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo10.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo11.png" alt="" /></a></div>
-				<div><a href="#"><img src="images/clients/logo12.png" alt="" /></a></div>
+			<?php if(is_array($lstClientes) && count($lstClientes) > 0):?>
+				<?php foreach($lstClientes as $objCliente):?>
+				<div><a href="javascript:void(0);"><img src="<?php echo base_url("conteudo/$objCliente->imagem");?>" alt="" /></a></div>
+				<?php endforeach;?>
+			<?php endif;?>
 			</div><!--END UL GRID--> 
 						
 			<div class="one"><br />
