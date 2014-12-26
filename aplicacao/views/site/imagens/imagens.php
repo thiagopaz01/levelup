@@ -40,29 +40,29 @@
 	<div class="header clear">
 		
 		<div id="logo">	
-			<a href="index-2.html"><img src="images/logo.png" alt="" /></a>		
+			<a href="<?php echo base_url(); ?>"><img src="images/logo.png" alt="" /></a>		
 		</div><!--END LOGO-->
 	
 		<div id="primary-menu">
 			
 			<ul class="menu">
-				<li><a href="index2.html" class="current">Home</a></li>
-				<li><a href="#">SOBRE</a>		
+				<li><a href="<?php echo base_url(); ?>" class="current">Home</a></li>
+				<li><a href="javascript:void(0);">SOBRE</a>		
 					<ul>
-						<li><a href="team2.html">Equipe</a></li>
-						<li><a href="clients.html">Clientes</a></li>
+						<li><a href="<?php echo base_url(); ?>equipe">Equipe</a></li>
+						<li><a href="<?php echo base_url(); ?>clientes">Clientes</a></li>
 					</ul>
 			    </li>
-				<li><a href="gallery-4.html">IMAGENS</a></li>
-				<li><a href="blog2.html">Blog</a></li>
-				<li><a href="contact3.html">CONTATO</a></li>
+				<li><a href="<?php echo base_url(); ?>imagens">IMAGENS</a></li>
+				<li><a href="<?php echo base_url(); ?>blog">Blog</a></li>
+				<li><a href="<?php echo base_url(); ?>contato">CONTATO</a></li>
 			</ul><!--END UL-->
 			
 		</div><!--END PRIMARY MENU-->
-			
+  
 	</div><!--END HEADER-->	
-	
-</div><!--END HEADER-WRAPPER-->		
+
+</div><!--END HEADER-WRAPPER-->			
 
 <!-- END HEADER -->
 
@@ -84,137 +84,31 @@
 	
 		<div class="filterable text-align-center">	
 			<ul id="gallery-nav">
-				<li class="current"><a href="#" data-filter="*">All</a></li>
-				<li><a data-filter=".landscape" href="#">Landscape</a></li>
-				<li><a data-filter=".portrait" href="#">Portrait</a></li>
-				<li><a data-filter=".people" href="#">People</a></li>
-				<li><a data-filter=".nature" href="#">Nature</a></li>
-				<li><a data-filter=".city" href="#">City</a></li>
+				<li class="current"><a href="#" data-filter="*">Todas</a></li>
+			<?php if(is_array($lstCategorias) && count($lstCategorias) > 0):?>
+				<?php foreach($lstCategorias as $objCat):?>
+				<li><a data-filter=".<?php echo $objCat->nome;?>" href="#"><?php echo $objCat->nome;?></a></li>
+				<?php endforeach;?>
+			<?php endif;?>
 			</ul><!--END PORTFOLIO-NAV-->
 		</div><!--END FILTERABLE-->
 			
 		<div class="portfolio-grid">
 	
 			<ul id="thumbs" class="gallery col4 style-3">
-				<li class="item landscape">
+			<?php if(is_array($lstImagens) && count($lstImagens) > 0):?>
+				<?php foreach($lstImagens as $objImagem):?>
+				<li class="item <?php echo $objImagem->catImagem;?>">
 					<div>
-						<a href="images/portfolio-item-1.jpg" data-rel="prettyPhoto[landscape]"><img src="images/portfolio-item-1.jpg" alt="" /></a>
+						<a href="<?php echo base_url("conteudo/$objImagem->imagem2");?>" data-rel="prettyPhoto[landscape]"><img src="<?php echo base_url("conteudo/$objImagem->imagem");?>" alt="" /></a>
 						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Landscape / People / Nature</h4>				
+							<h3 class="title"><a href="blog-single2.html"><?php echo $objImagem->titulo;?></a></h3>
+							<h4 class="title"><?php echo $objImagem->catImagem;?></h4>				
 						</div>
 					</div>
 				</li>
-				
-				<li class="item landscape city">
-					<div>
-						<a href="images/portfolio-item-2.jpg" data-rel="prettyPhoto[landscape]"><img src="images/portfolio-item-2.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Landscape / Nature</h4>				
-						</div>
-					</div>
-				</li>
-				
-				<li class="item landscape">
-					<div>
-						<a href="images/portfolio-item-3.jpg" data-rel="prettyPhoto[landscape]"><img src="images/portfolio-item-3.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Landscape / People / Nature</h4>				
-						</div>
-					</div>
-				</li>
-				
-				<li class="item landscape city">
-					<div>
-						<a href="images/portfolio-item-4.jpg" data-rel="prettyPhoto[landscape]"><img src="images/portfolio-item-4.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Landscape</h4>				
-						</div>
-					</div>
-				</li>
-				
-				<li class="item portrait">
-					<div>
-						<a href="images/portfolio-item-5.jpg" data-rel="prettyPhoto[portrait]"><img src="images/portfolio-item-5.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Portrait / City / Nature</h4>				
-						</div>
-					</div>
-				</li>
-				
-				<li class="item portrait">
-					<div>
-						<a href="images/portfolio-item-6.jpg" data-rel="prettyPhoto[portrait]"><img src="images/portfolio-item-6.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Portrait / City / People</h4>				
-						</div>
-					</div>
-				</li>
-				
-				<li class="item portrait">
-					<div>
-						<a href="images/portfolio-item-7.jpg" data-rel="prettyPhoto[portrait]"><img src="images/portfolio-item-7.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Portrait / People</h4>				
-						</div>
-					</div>
-				</li>
-				
-				<li class="item people">
-					<div>
-						<a href="images/portfolio-item-8.jpg" data-rel="prettyPhoto[people]"><img src="images/portfolio-item-8.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">People / Portrait</h4>				
-						</div>
-					</div>
-				</li>
-				
-				<li class="item people">
-					<div>
-						<a href="images/portfolio-item-9.jpg" data-rel="prettyPhoto[people]"><img src="images/portfolio-item-9.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">People / City</h4>				
-						</div>
-					</div>
-				</li>
-				
-				<li class="item nature">
-					<div>
-						<a href="images/portfolio-item-10.jpg" data-rel="prettyPhoto[nature]"><img src="images/portfolio-item-10.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Nature / City / People</h4>				
-						</div>
-					</div>
-				</li>
-													
-				<li class="item nature city">
-					<div>
-						<a href="images/portfolio-item-11.jpg" data-rel="prettyPhoto[nature]"><img src="images/portfolio-item-11.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Nature / People</h4>				
-						</div>
-					</div>
-				</li>	
-													
-				<li class="item nature">
-					<div>
-						<a href="images/portfolio-item-12.jpg" data-rel="prettyPhoto[nature]"><img src="images/portfolio-item-12.jpg" alt="" /></a>
-						<div class="caption">
-							<h3 class="title"><a href="blog-single2.html">TÍTULO</a></h3>
-							<h4 class="title">Nature / City</h4>				
-						</div>
-					</div>
-				</li>
+				<?php endforeach;?>
+			<?php endif;?>
 				
 			</ul><!--END UL-->
 				
